@@ -6,12 +6,13 @@ const pagesInput = document.getElementById("pages");
 const checkInput = document.getElementById("check");
 const bookForm = document.getElementById("bookForm");
 
-bookForm.addEventListener("submit", addBook);
-
-window.addEventListener("load", function (e) {
+function init() {
+  bookForm.addEventListener("submit", addBook);
   populateStorage();
   render();
-});
+}
+
+window.addEventListener("load", init);
 
 function populateStorage() {
   if (myLibrary.length === 0) {
