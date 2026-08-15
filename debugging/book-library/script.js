@@ -101,11 +101,12 @@ function render() {
     deleteButton.addEventListener("click", function () {
       const deletedTitle = myLibrary[i].title;
 
-      // delete first, then render
       myLibrary.splice(i, 1);
       render();
 
-      alert(`You've deleted title: ${deletedTitle}`);
+      setTimeout(() => {
+        alert(`You've deleted title: ${deletedTitle}`);
+      }, 0);
     });
   }
 }
