@@ -29,7 +29,7 @@ function printReceipt(array) {
   console.log(`Total: ${totalPrice.toFixed(2)}`);
 }
 printReceipt(order);
-// ```
+// Output:
 // QTY     ITEM                TOTAL
 // 1       Hot Cakes           2.32
 // 2       Apple Pie           2.78
