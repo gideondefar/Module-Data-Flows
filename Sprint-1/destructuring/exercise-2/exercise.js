@@ -86,3 +86,15 @@ function findGryffindorMembers(array) {
   }
   return pplInGryffindor;
 }
+
+console.log(findGryffindorMembers(hogwarts));
+
+/** output:
+The function returns an array containing the five Gryffindor members: Harry Potter, Ron Weasley, Hermione Granger, Minerva McGonagall, and Albus Dumbledore.
+[
+'Harry Potter',
+'Ron Weasley',
+'Hermione Granger',
+'Minerva McGonagall',
+'Albus Dumbledore'
+] */
